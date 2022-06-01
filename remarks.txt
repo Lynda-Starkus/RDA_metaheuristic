@@ -12,7 +12,7 @@
 - Take alpha% of best male deers as male commanders
 - Stag = males - commanders chosen
 - We let the commanders and stags fight randomly, and select them after fighting if objective function is better than prior
-- Forming Harems : 
+- Forming Harems for commanders : 
 	- Weird formula
 - Mating the male commander with beta% hinds in his harem
 - Mating the male commander with gamma% hinds of another harem
