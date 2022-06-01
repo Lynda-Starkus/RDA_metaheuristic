@@ -1,0 +1,27 @@
+- it's a population based meta
+- Harem : group of female RDs which mate with a male commander
+- the males fight and roar to get the harem
+- 3 behaviors : Raoring - Mating - Fighting
+- Females prefer high roaring to low roaring
+- A male rd can seek multiple mating attemps before the successful one
+- Winner RD will seize the territory of losing RD
+
+- Steps of algo :
+- generating initial rd : random points of size Npop, we choose the best RDs to Nmale and the rest Nhind
+- Roar male RDs : here RD tries to increse a grace by roaring and male red deers are allowed to change position
+- Take alpha% of best male deers as male commanders
+- Stag = males - commanders chosen
+- We let the commanders and stags fight randomly, and select them after fighting if objective function is better than prior
+- Forming Harems : 
+	- Weird formula
+- Mating the male commander with beta% hinds in his harem
+- Mating the male commander with gamma% hinds of another harem
+- Mating every stag with nearest hind
+- Select next gen : male RDs are chosen as the best solutions and hinds are chosen with tournament selection or roulette wheel or any other mechanism for selection with fitness
+- Convergence : nb_iter or  quality of thee best solution or a time intervall
+
+
+remarks: 
+- intensification is guarenteed by fighting and male commanders selection
+- diversification is guarenteed by the mating process of commanders and stags
+- Escaping local optimums is guarenteed by next generation
